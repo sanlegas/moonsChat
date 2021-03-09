@@ -9,7 +9,7 @@
   "scripts": {
     "ng": "ng",
     "example": "ng build",
-    "postinstall": "ng build --aot -prod",
+    "postinstall": "ng build --aot",
     "start": "ng build --prod && node ./server/server.js",
     "build": "ng build",
     "test": "ng test",
