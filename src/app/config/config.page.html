@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Config
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <br/>
+
+  <ion-item>
+    <ion-label position="stacked">Nombre</ion-label>
+    <ion-input (keyup.enter)="saveNombre()"  [(ngModel)]="nombre" ></ion-input>
+  </ion-item>
+  <br/>
+  <ion-button expand="block" (click)="saveNombre()" >Guardar</ion-button>
+
+</ion-content>

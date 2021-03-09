@@ -1,5 +1,7 @@
 {
   "name": "moonsChat",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

@@ -1,0 +1,9 @@
+<ion-item>
+  <ion-avatar [slot]="isUserMain? 'end':'start'">
+    <img [src] = imgUsr>
+  </ion-avatar>
+  <ion-label [ngStyle]="{'text-align': isUserMain ? 'right':'left'}">
+    <h2 [ngStyle]="{'text-align':isUserMain ? 'right':'left'}">{{name}}</h2>
+    <p [ngStyle]="{'text-align':isUserMain ? 'right':'left'}">{{message}}</p>
+  </ion-label>
+</ion-item>

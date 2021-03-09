@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Chat
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Chat</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list lines="none">
+
+    <app-message  *ngFor="let mensaje of mensajes" [name] = mensaje.name [message]="mensaje.message" [isUserMain]="mensaje.isUserMain"></app-message>
+  </ion-list>
+
+</ion-content>
+
+<ion-footer>
+  <ion-item>
+    <ion-input (keyup.enter)="mandaMensaje()" [(ngModel)]="mensajeTxt" placeholder="Escribe algo en el chat..."></ion-input>
+    <ion-button  size="medium" (click)="mandaMensaje()">Enviar</ion-button>
+
+  </ion-item>
+</ion-footer>

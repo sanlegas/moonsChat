@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {UserManagerService} from '../service/userManager/user-manager.service';
 
 @Component({
   selector: 'app-tabs',
@@ -7,6 +8,15 @@ import { Component } from '@angular/core';
 })
 export class TabsPage {
 
-  constructor() {}
+  constructor(private userManagerService: UserManagerService) {}
+
+  private validateEmptyString(stringToValidate){
+    return stringToValidate !== undefined && stringToValidate !== null && stringToValidate !== '';
+  }
+
+  public usuarioIsRegistered(){
+
+    return this.validateEmptyString(this.userManagerService.userName);
+  }
 
 }
