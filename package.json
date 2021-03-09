@@ -10,7 +10,7 @@
     "ng": "ng",
     "example": "ng build",
     "postinstall": "ng build --aot",
-    "start": "ng build --prod && node ./server/server.js",
+    "start": "node ./server/server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
