@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "author": "Isaac David Santiago Legaspi",
   "homepage": "https://github.com/sanlegas",
+  "engines": {
+    "node": "12.x"
+  },
   "scripts": {
     "ng": "ng",
     "example": "ng build",
@@ -13,6 +16,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+
   "private": true,
   "dependencies": {
     "@angular/common": "~11.2.0",
