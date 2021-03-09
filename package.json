@@ -8,10 +8,8 @@
   },
   "scripts": {
     "ng": "ng",
-    "example": "ng build",
-    "postinstall": "ng build --aot",
     "start": "node server.js",
-    "build": "ng build",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

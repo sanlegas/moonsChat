@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  serverSocket: 'http://localhost:3000'
+  serverSocket: 'https://moonschat.herokuapp.com'
 };
