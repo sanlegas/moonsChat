@@ -20,9 +20,9 @@ const corsOptionsDelegate = function (req, callback) {
 };
 
 
-app.use(express.static(__dirname+'/../www'));
+app.use(express.static(__dirname+'/www'));
 app.get('/',function(req,res){
-  res.sendFile(path.join(__dirname+'/../www/index.html'));
+  res.sendFile(path.join(__dirname+'/www/index.html'));
 });
 
 app.use(cors(corsOptionsDelegate));
